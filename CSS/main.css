@@ -1,0 +1,320 @@
+@charset "UTF-8";
+ul {
+  list-style: none;
+  padding: 0; }
+
+li {
+  display: inline-block;
+  width: 16%;
+  position: relative;
+  /*para que el menu se despliegue*/ }
+
+a:hover {
+  background-color: orange; }
+
+li a {
+  font-size: 70%;
+  text-align: center;
+  display: block;
+  color: white !important;
+  background-color: #F3B556;
+  padding: 0%;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif; }
+
+ul ul {
+  position: absolute;
+  display: none; }
+
+ul ul li {
+  width: 100%;
+  z-index: 1; }
+
+ul li:hover ul {
+  display: block; }
+
+.grid__container__index {
+  display: inblock-grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  grid-template-areas: "header header header"  "imagen__index imagen__index imagen__index" "parrafo parrafo parrafo" "cuadrado__psicomotricidad cuadrado__psicomotricidad cuadrado__psicomotricidad" "footer footer footer";
+  flex-wrap: wrap; }
+
+.grid__container__asesoramiento {
+  display: inblock-grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  grid-template-areas: "header header header"  "supervicion familias ." " formulario formulario ." "footer footer footer";
+  flex-wrap: wrap; }
+
+.grid__container__psicomotricidad {
+  display: inblock-grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  grid-template-areas: "header header header"  "texto__psicomotricidad texto__psicomotricidad texto__psicomotricidad" "texto texto texto" "destinatarios ambito__trabajo recursos rol" "footer footer footer";
+  flex-wrap: wrap; }
+
+.grid__container__quiensoy {
+  display: inblock-grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  grid-template-areas: "header header header"  "quiensoy quiensoy quiensoy" "footer footer footer";
+  flex-wrap: wrap; }
+
+.grid__container__talleres {
+  display: inblock-grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  grid-template-areas: "header header header"  "titulo__talleres titulo__talleres titulo__talleres" "video video video" "tabla tabla tabla" "footer footer footer";
+  flex-wrap: wrap; }
+
+.grid__container__masinfo {
+  display: inblock-grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  grid-template-areas: "header header header"  "texto texto texto" "footer footer footer";
+  flex-wrap: wrap; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  color: black;
+  font-size: 1.3rem; }
+
+header {
+  grid-area: header; }
+
+footer {
+  grid-area: footer;
+  width: 100%;
+  bottom: 0px;
+  margin-bottom: 0;
+  padding: 0; }
+
+label {
+  margin-left: 7%; }
+
+table {
+  border: 10px double;
+  margin: 10%; }
+
+th {
+  background-color: #cccccc;
+  border: solid; }
+
+tr, td {
+  border: solid; }
+
+p {
+  color: black;
+  margin: 2%; }
+
+.lista {
+  color: black; }
+
+.menu {
+  list-style-type: none; }
+
+.pequeño__fondo {
+  max-width: 80%;
+  background-color: #FCF4E4; }
+
+.titulo__tabla {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 100%;
+  background-color: #F9B952; }
+
+.titulo {
+  color: darkred;
+  font-weight: bold;
+  margin-left: 7%;
+  margin-top: 7%;
+  margin-bottom: 3%; }
+
+.subtitulo {
+  color: red;
+  margin-left: 7%;
+  margin-top: 7%;
+  margin-bottom: 3%;
+  font-weight: bold; }
+
+.Link__sin__sub {
+  text-decoration: none;
+  color: white; }
+
+.fondo {
+  background-color: black;
+  color: white;
+  width: 100%; }
+
+.bloque {
+  width: 18%;
+  display: inline-grid;
+  padding: 3%;
+  text-align: center; }
+
+.bloque2 {
+  border: 3px;
+  width: 40%;
+  display: inline-grid;
+  padding: 30px;
+  text-align: center; }
+
+.alineacion__derecha {
+  text-align: right;
+  margin-right: 10px; }
+
+.centrado {
+  text-align: center; }
+
+.centradoimg {
+  margin-left: 15%; }
+
+.agrandar {
+  font-size: 80%; }
+
+/*
+.salto {
+    display: block;
+    margin-top: 20px;
+}
+*/
+.imagen {
+  padding: 3%;
+  margin: 3%;
+  float: left;
+  width: 50%; }
+
+.imagen__derecha {
+  float: right;
+  text-align: top;
+  width: 30%;
+  margin-bottom: 10%; }
+
+.img__principal {
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  width: 97%; }
+
+.contenedor {
+  display: inblock-grid;
+  max-width: 60%;
+  margin: 8%;
+  padding: 2%;
+  background: #F9DBAE;
+  border-top: 1px black;
+  margin-left: 18%; }
+
+.margen4 {
+  margin-left: 8%; }
+
+.margenizq {
+  margin-left: 4%; }
+
+.margen {
+  margin: 5%; }
+
+.margentop {
+  margin-top: 5%; }
+
+.margenbot {
+  margin-bottom: 5%; }
+
+.flex__container1 {
+  display: flex;
+  flex-direction: row;
+  background-color: #F9DBAE;
+  justify-content: space-around;
+  align-content: center; }
+
+.fondo__gradiente {
+  background-image: linear-gradient(to right, orange, yellow); }
+
+@keyframes esfumado {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.titulo__esfumado {
+  animation-duration: 2s;
+  animation-name: esfumado;
+  animation-iteration-count: infinite;
+  transform: scale(1); }
+
+/*input:focus {
+   width: 200px;
+   font-size: 24px;
+} */
+.imagen__chica {
+  height: 170px;
+  width: 170px;
+  object-fit: cover; }
+
+.imagen__mediana {
+  height: 450px;
+  width: 450px;
+  object-fit: cover; }
+
+@media screen and (max-width: 800px) {
+  .grid__conteiner__index {
+    padding: 0;
+    font-size: 80%;
+    display: flex;
+    /*overflow: hidden;*/ }
+  .grid__container__asesoramiento {
+    padding: 0;
+    font-size: 80%;
+    display: flex;
+    /*overflow: hidden;*/ }
+  .grid__container__psicomotricidad {
+    padding: 0;
+    font-size: 80%;
+    display: flex;
+    /*overflow: hidden;*/ }
+  .grid__container__quiensoy {
+    padding: 0;
+    font-size: 80%;
+    display: flex;
+    /*overflow: hidden;*/ }
+  .grid__container__talleres {
+    padding: 0;
+    font-size: 80%;
+    display: flex;
+    /*overflow: hidden;*/ }
+  .grid__container__masinfo {
+    padding: 0;
+    font-size: 80%;
+    display: flex;
+    /*overflow: hidden;*/ }
+  .imagen__mediana2 {
+    height: 150px;
+    width: 150px;
+    object-fit: cover; }
+  .centradoimg {
+    margin-left: 5%; }
+  .imagen__chica {
+    height: 100px;
+    width: 100px;
+    object-fit: cover; }
+  .imagen__mediana {
+    height: 220;
+    width: 220;
+    object-fit: cover; }
+  .flex__container1 {
+    display: grid;
+    background-color: #F9DBAE; } }

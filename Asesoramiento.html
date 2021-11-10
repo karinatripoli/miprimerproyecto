@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Te ofrezco varias alternativas de asesoramiento, ya sea a profesionales de salud en el ámbito clínico, a quienes ejercen en el ámbito de educación, o acompañamiento a familias. ">
+	<meta name="keywords" content="psicomotricidad, talleres, cuerpo, movimiento, expresión, relajación, lúdico, juego, disfrute, reencuentro, asesoramiento, supervisión, profesionales, familias, ayuda, escucha, sostén, acompañamiento">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<title>Asesoramiento</title>
+</head>
+
+<body class="grid__container__asesoramiento">
+	<header class="fondo">	
+		<nav> 
+			<ul class="centrado">
+				<li><img src="imagenes/logo.jpeg" alt="logo" width="40%"></li>
+				<li><a id="cuadrado__psicomotricidad" href="index.html">Inicio</a></li>
+				<li><a href="Psicomotricidad.html">Psicomotricidad</a> 
+					<ul class="dropdown-menu dropdown-menu-dark">
+						<li><a href="Psicomotricidad.html#texto__psicomotricidad">¿Qué es la Psicomotricidad?</a></li>
+						<li><a href="Psicomotricidad.html#sus__beneficios">Sus beneficios</a></li>
+						<li><a href="Psicomotricidad.html#mas__informacion">Más información</a></li>
+					</ul>
+				</li>
+				<li><a href="Asesoramiento.html">Asesoramiento</a>
+				</li>
+				<li><a href="Talleres.html">Talleres</a>
+				</li>
+				<li><a href="Quiensoy.html">Quién soy</a></li>
+			</ul>
+			</nav>
+		</header>
+			
+		<main class="margen4">
+			<section class="centradoimg">
+				<h1 id="supervision" class="titulo">Asesoramiento</h1>
+				<div id="supervision" class="bloque2">
+					<h1 class="titulo">Supervisión</h1>
+					<img src="imagenes/supervision.jpg" alt="Psicomotricidad" width="100%" class="imagen__mediana2">
+		  			<p> Sabemos que al estar implicados con nuestros pacientes, es necesaria la supervisión para poder diferenciar lo propio con lo del otro, recibir una mirada más objetiva ante la situación y poder brindar y sostén y acompañamiento. </p>
+		  		</div>
+				<div id="familias" class="bloque2">
+					<h1 class="titulo">Familias</h1>
+					<img src="imagenes/familia.jfif" alt="Psicomotricidad" width="100%" class="imagen__mediana2">
+		  			<p> Cada familia está inmersa en un contexto socio-cultural, lo cual puede llevar diversos malestares, inseguridades, inquietudes que emergen en dicho entorno. Te ofrezco un espacio de sostén, confianza, sin prejuicios ni estereotipos; que se acomode a la demanda de cada uno. </p>
+	  			</div>
+	  		</section>
+	  		
+	  		<section id="formulario">
+	  			<h1 class="titulo centrado">Contactanos</h1>
+	  			<form action="tabla_submit" method="post" role="form" class="contenedor">
+					<div class="form-group">
+						<label for="fname">Nombre:</label> 
+						<input type="text" name="fname" class="form-control" id="fname"> 
+					</div>
+					<div class="form-group">
+						<label for="lname">Apellido:</label> 
+						<input type="text" name="lname" class="form-control" id="lname"> 
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label> 
+						<input type="type" name="email" class="form-control" id="email"> 
+					</div>
+					<div class="form-group">
+						<label for="numero">Número:</label> 
+						<input type="text" name="numero" class="form-control" id="numero"> 
+					</div>
+					<div class="form-group">
+						<select name="motivo" class="agrandar salto"> 
+							<option value="T"> Talleres </option>
+							<option value="A"> Asesoramiento </option>
+							<option value="O"> Otro </option>
+						</select> 
+					</div>
+					<div class="form-group">
+						<p>Comentario<p/>
+						<textarea name="comentario" class="form-control" rows="3">Escribe tu comentario: </textarea>
+					</div> 
+					<div id="terminos"class="checkbox"> Desea recibir nuestras noticias? 
+						<input type="checkbox" name="Suscribirse" value="1">
+					</div>  
+					<input type="submit" value="Enviar">  
+					<input type="reset" value="Limpiar datos">
+				</form>
+	  		</section>
+	  	</main>
+	  	
+	<footer class="fondo__gradiente">
+    	<section>
+    		<a href="https://www.facebook.com/" target="_blank"> <img src="imagenes/facebook.png"alt="Facebook" width="3%"> </a>
+     		<a href="https://www.instagram.com/?hl=es" target="_blank"> <img src="imagenes/instagram.png"alt="Instagram" width="3%"> </a>
+     		<a href="https://twitter.com/home" target="_blank"> <img src="imagenes/twiter.png"alt="Twitter" width="3%"> </a>
+     		<a href="https://mail.google.com/mail/" target="_blank"> <img src="imagenes/email.png"alt="E-mail" width="3%"> </a>
+     		<a href="Asesoramiento.html#formulario" class="Link__sin__sub">Contactanos</a>
+    	</section>
+    	<h6 class="alineacion__derecha"> Todos los derechos reservados. </h6>
+  	</footer>
+
+</html>
